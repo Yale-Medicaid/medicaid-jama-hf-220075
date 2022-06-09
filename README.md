@@ -23,13 +23,13 @@ This paper uses restricted data which cannot be shared.
 #### Analysis and Processing Scripts
 All code for this project is provided within the `code\` folder.
 
-Creation of the analytic table from administrative claims and enrollment data including health care outcomes and spending, patient characteristics were performed with Python. Figures were created with matplotlib. Coefficients for racial disparities were estimated by importing the analytic tables into Stata 16 and using reghdfe. The estimation code can be found in the code\ folder where:
-1. `main_regressions.do`: Stata do file that runs the main regressions using `reghdfe` command for the follwing specifications:
+Creation of the analytic table from administrative claims and enrollment data including health care outcomes and spending, patient characteristics were performed with Python. Figures were created with matplotlib. Coefficients were estimated by importing the analytic tables into Stata 16 and using reghdfe. The estimation code can be found in the code\ folder where:
+1. `main_regressions.do`: Stata do file that runs the main regressions using `reghdfe` command for the following specifications:
    -  No controls
    -  Adjusted for enrollee demographics
-   -  Adjusted for enrollee demograohics and health status
+   -  Adjusted for enrollee demographics and health status
 2. `main_regressions_with_provider_FE.do`: Stata do file that runs the main regressions using `reghdfe` command for the follwing specification:
-   -  Adjusted for enrollee demograohics, health status and usual source of care (i.e., provider fixed effect)
+   -  Adjusted for enrollee demographics, health status and usual source of care (i.e., provider fixed effects)
 
 A final .py file `adjuted_pvals.py` adjusts Stata produced p-values from `main_regressions_provider_FE.do` using the Benjamini-Hochberg procedue in `statsmodels'.
 
