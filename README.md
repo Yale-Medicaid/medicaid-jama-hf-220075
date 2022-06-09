@@ -1,10 +1,8 @@
 # medicaid-jama-hf-220075
-Repository for JAMA Health Forum paper entitled "Disparities in Health Care Spending and Utilization Among Black and White Medicaid Enrollees"
-
-Jacob Wallace, Anthony Lollo, Chima Ndumele, Kate A. Duchowny, Matthew Lavallee, JAMA Health Forum
+Repository for *JAMA Health Forum* paper entitled "Disparities in Health Care Spending and Utilization Among Black and White Medicaid Enrollees" by Jacob Wallace, Anthony Lollo, Kate A. Duchowny, Matthew Lavallee, and Chima Ndumele.
 
 # Replication Code
-The programs for the main paper regressions are provide as .do files that need to be run in a stata environment. An extra .py file that needs to be run in a python environment is provided for adjusting the Stata prodcued p-values using the Benjamini-Hochberg procedure.
+Snippets from the programs used to run the primary regressions in the paper are provide as .do files that need to be run in a Stata environment. An extra .py file that needs to be run in a python environment is provided for adjusting the Stata prodcued p-values using the Benjamini-Hochberg procedure.
 
 #### Required Packages and Versions 
 The analysis was performed with the following libraries and versions, so to ensure reproducibility packages and versions should match
@@ -20,7 +18,7 @@ matplotlib 3.3.4
 ```
 
 #### Data
-This paper uses restricted data which must be aqcuired from XXXX
+This paper uses restricted data which cannot be shared.
 
 #### Analysis and Processing Scripts
 All code for this project is provided within the `code\` folder.
